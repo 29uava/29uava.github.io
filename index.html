@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyuwon Portfolio</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="js/jquery-ui.css">
+    <link rel="stylesheet" href="js/swiper/css/swiper.css">
+    <link rel="stylesheet" href="js/fullPage.js-2.9.7/jquery.fullpage.css">
+    <!-- Javascript -->
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="js/ui.js"></script>
+    <script type="text/javascript" src="js/fullPage.js-2.9.7/jquery.fullpage.js"></script>
+    <script type="text/javascript" src="js/swiper/js/swiper.js"></script>
+</head>
+<body>
+
+<!-- header -->
+<header id="header">
+    <div class="flex sb ac">
+        <a href="index.html">
+            <h1 class="logo" id="logoName">Gyuwon</h1>
+        </a>
+        <button type="button" class="btnMenu"><span class="hidden">메뉴</span></button>
+    </div>
+</header>
+
+<!-- main -->
+<div id="main">
+   <!-- Section1 -->
+    <div class="section sec1" data-anchor="section1">
+        <div class="inner">
+            <div class="cusSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="flex ac">
+                            <!-- textArea -->
+                            <div class="textArea">
+                                <strong class="tit">LX 국토정보플랫폼</strong>
+                                <p class="desc">
+                                    국토지리정보원 공간정보 서비스 체계에서<br/>
+                                    공공과 민간의 정보 활용과 유통을 담당하는<br/>
+                                    대표 서비스 창구
+                                </p>
+                            </div>
+                            <!-- //textArea -->
+                            <!-- imgBox -->
+                            <div class="imgBox">
+                                <img src="images/lx.png" alt="LX 국토정보플랫폼"/>
+                            </div>
+                            <!--// imgBox -->
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex ac">
+                            <!-- textArea -->
+                            <div class="textArea">
+                                <strong class="tit">공간정보산업협회</strong>
+                                <p class="desc">
+                                    공간정보산업 관련 각종 자료를 수집 조사하고,<br/>
+                                    측량 법령, 기술, 측지, 도서 검색, 법률 등<br/>
+                                    정보 자료실 제공
+                                </p>
+                            </div>
+                            <!-- //textArea -->
+                            <!-- imgBox -->
+                            <div class="imgBox">
+                                <img src="images/gis_En.png" alt="공간정보산업협회"/>
+                            </div>
+                            <!--// imgBox -->
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex ac">
+                            <!-- textArea -->
+                            <div class="textArea">
+                                <strong class="tit">KGEO 플랫폼</strong>
+                                <p class="desc">
+                                    우리나라의 모든 공간 정보를 손쉽게 통합하고,<br />
+                                    누구나 열람이 가능하여 활용할 수 있도록 한<br />
+                                    클라우드 기반의 공간정보플랫폼
+                                </p>
+                            </div>
+                            <!-- //textArea -->
+                            <!-- imgBox -->
+                            <div class="imgBox">
+                                <img src="images/kgeop.png" alt="KGEO 플랫폼"/>
+                            </div>
+                            <!--// imgBox -->
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex ac">
+                            <!-- textArea -->
+                            <div class="textArea">
+                                <strong class="tit">COSMOS</strong>
+                                <p class="desc">
+                                    국토지리정보원 공간정보 서비스 체계에서<br />
+                                    공공과 민간의 정보 활용과 유통을 담당하는<br />
+                                    대표 서비스 창구
+                                </p>
+                            </div>
+                            <!-- //textArea -->
+                            <!-- imgBox -->
+                            <div class="imgBox">
+                                <img src="images/cosmos.png" alt="cosmos"/>
+                            </div>
+                            <!--// imgBox -->
+                        </div>
+                    </div>
+                </div>
+                <div class="controller">
+                    <button type="button" class="swiper-button-up"><span class="hidden">위로</span></button>
+                    <div class="swiper-pagination">
+
+                    </div>
+                    <button type="button" class="swiper-button-down"><span class="hidden">아래로</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //Section1 -->
+    <!-- Section2 -->
+    <div class="section sec2" data-anchor="section2">
+    </div>
+    <!-- //Section2 -->
+    <!-- Section3 -->
+    <div class="section sec3" data-anchor="section3">
+
+    </div>
+    <!-- //Section3 -->
+</div>
+
+<script type="text/javascript">
+    var swiper = new Swiper(".cusSwiper", {
+        direction: "vertical",
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        spaceBetween: 60,
+        navigation: {
+            nextEl: ".swiper-button-down",
+            prevEl: ".swiper-button-up",
+        },
+    });
+</script>
+</body>
+</html>
