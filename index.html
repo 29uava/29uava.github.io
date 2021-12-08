@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gyuwon Portfolio</title>
     <!-- css -->
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="js/jquery-ui.css">
-    <link rel="stylesheet" href="js/swiper/css/swiper.css">
-    <link rel="stylesheet" href="js/fullPage.js-2.9.7/jquery.fullpage.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../js/jquery-ui.css">
+    <link rel="stylesheet" href="../js/swiper/css/swiper.css">
+    <link rel="stylesheet" href="../js/fullPage.js-2.9.7/jquery.fullpage.css">
     <!-- Javascript -->
-    <script type="text/javascript" src="js/jquery-ui.js"></script>
-    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
-    <script type="text/javascript" src="js/ui.js"></script>
-    <script type="text/javascript" src="js/fullPage.js-2.9.7/jquery.fullpage.js"></script>
-    <script type="text/javascript" src="js/swiper/js/swiper.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.js"></script>
+    <script type="text/javascript" src="../js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="../js/ui.js"></script>
+    <script type="text/javascript" src="../js/fullPage.js-2.9.7/jquery.fullpage.js"></script>
+    <script type="text/javascript" src="../js/swiper/js/swiper.js"></script>
 </head>
 <body>
 
@@ -24,6 +24,13 @@
         <a href="index.html">
             <h1 class="logo" id="logoName">Gyuwon</h1>
         </a>
+        <div class="menu">
+            <ul>
+                <li><a href="#section3">ABOUT</a></li>
+                <li><a href="#section2">PORTFOLIO</a></li>
+                <li><a href="#section1">CONTACT</a></li>
+            </ul>
+        </div>
         <button type="button" class="btnMenu"><span class="hidden">메뉴</span></button>
     </div>
 </header>
@@ -49,7 +56,7 @@
                             <!-- //textArea -->
                             <!-- imgBox -->
                             <div class="imgBox">
-                                <img src="images/lx.png" alt="LX 국토정보플랫폼"/>
+                                <img src="../images/portfolio/lx.png" alt="LX 국토정보플랫폼"/>
                             </div>
                             <!--// imgBox -->
                         </div>
@@ -68,7 +75,7 @@
                             <!-- //textArea -->
                             <!-- imgBox -->
                             <div class="imgBox">
-                                <img src="images/gis_En.png" alt="공간정보산업협회"/>
+                                <img src="../images/portfolio/gis_En.png" alt="공간정보산업협회"/>
                             </div>
                             <!--// imgBox -->
                         </div>
@@ -87,7 +94,7 @@
                             <!-- //textArea -->
                             <!-- imgBox -->
                             <div class="imgBox">
-                                <img src="images/kgeop.png" alt="KGEO 플랫폼"/>
+                                <img src="../images/portfolio/kgeop.png" alt="KGEO 플랫폼"/>
                             </div>
                             <!--// imgBox -->
                         </div>
@@ -106,7 +113,7 @@
                             <!-- //textArea -->
                             <!-- imgBox -->
                             <div class="imgBox">
-                                <img src="images/cosmos.png" alt="cosmos"/>
+                                <img src="../images/portfolio/cosmos.png" alt="cosmos"/>
                             </div>
                             <!--// imgBox -->
                         </div>
@@ -120,16 +127,42 @@
                     <button type="button" class="swiper-button-down"><span class="hidden">아래로</span></button>
                 </div>
             </div>
+
+            <div class="scrollDown">
+                <div class="mouseDown">
+                </div>
+                <div class="moveTxt">
+                </div>
+            </div>
+
         </div>
     </div>
     <!-- //Section1 -->
     <!-- Section2 -->
     <div class="section sec2" data-anchor="section2">
+        <div class="cardList" style="position:fixed">
+        </div>
     </div>
     <!-- //Section2 -->
     <!-- Section3 -->
     <div class="section sec3" data-anchor="section3">
-
+        <div class="aboutTextArea">
+            <h1 class="aboutTitle">ABOUT ME</h1>
+            <span class="subTitle">
+                #밑바닥 성장캐  #크리에이티브  #인류애충만  #언어력만렙 <br />
+                #프로문제해결러  #열쩡열쩡열쩡  #채찍보다당근  #꼬마대장  #ENFJ
+            </span>
+            <p class="desc">
+                 새로운 것에 겁내지 않고 도전하고 개척해 나아가는 정신. <br />
+                위기를 기회로 바꾸려는 긍정적 마인드와 합리적인 판단, <br />
+                꾸준함으로 힘 있게 일을 추진해 나아가는 실행력.<br />
+                 사물을 바라보고 연구하고 끊임없는 의문을 던지는 디자이너,<br />
+                문제해결을 위해 고민할 줄 알고 그 문제를 해결할 줄 아는 능력을 키우는 것.<br />
+                아이디어를 내고 컨셉을 고민하며,<br />
+                소비자의 need와 want를 제대로 표현할 수 있는 노하우를 익히고<br />
+                진일보하는 디자이너가 되기 위해 노력중입니다.
+            </p>
+        </div>
     </div>
     <!-- //Section3 -->
 </div>
@@ -141,6 +174,7 @@
             el: ".swiper-pagination",
             clickable: true,
         },
+        loop: true,
         spaceBetween: 60,
         navigation: {
             nextEl: ".swiper-button-down",

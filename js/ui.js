@@ -1,10 +1,17 @@
 $(document).ready(() => {
+
+    $('.btnMenu').on({
+        click: function () {
+            $(this).toggleClass('active').siblings('.menu').toggleClass('active');
+        }
+    });
+
     $('#main').fullpage({
         anchors: ['section1', 'section2', 'section3'],
         autoScrolling: true,
         scrollHorizontally: true,
         controlArrows: false,
-        onLeave: function (section, index) {
+        onLeave: (section, index) => {
             if (index == 1) {
                 $('#header > div > a > h1').html('Gyuwon').css({color:'#ffffff'}).css({background:'url("../images/icon_home.png") no-repeat left center'});
             } else if (index == 2) {
@@ -13,5 +20,7 @@ $(document).ready(() => {
                 $('#header > div > a > h1').html('Gyuwon').css({color:'#ffffff'}).css({background:'url("../images/icon_home.png") no-repeat left center'});
             }
         }
-    })
+    });
+
+
 });
