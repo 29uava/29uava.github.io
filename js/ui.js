@@ -1,4 +1,4 @@
-$(document).ready(() => {
+$(document).ready(function () {
 
     $('.btnMenu').on({
         click: function () {
@@ -13,13 +13,13 @@ $(document).ready(() => {
         //controlArrows: false,
         scrollOverflow:true,
         afterLoad:function (section, origin) {
-            if (origin.index === 0) {
+            if (origin.index == 0) {
                 $('#header').addClass('on1').removeClass('on2 on3');
                 $('.btnScrollTop').fadeOut();
-            } else if (origin.index === 1) {
+            } else if (origin.index == 1) {
                 $('#header').addClass('on2').removeClass('on1 on3');
                 $('.btnScrollTop').fadeIn();
-            } else if (origin.index === 2) {
+            } else if (origin.index == 2) {
                 $('#header').addClass('on3').removeClass('on1 on2');
                 $('.btnScrollTop').fadeIn();
             }
