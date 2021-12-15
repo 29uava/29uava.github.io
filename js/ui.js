@@ -11,7 +11,7 @@ $(document).ready(function () {
         //autoScrolling: true,
         //scrollHorizontally: true,
         //controlArrows: false,
-        scrollOverflow:true,
+        normalScrollElements: '.cardList',
         afterLoad:function (section, origin) {
             if (origin.index == 0) {
                 $('#header').addClass('on1').removeClass('on2 on3');
