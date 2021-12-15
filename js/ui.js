@@ -8,19 +8,28 @@ $(document).ready(() => {
 
     $('#main').fullpage({
         anchors: ['section1', 'section2', 'section3'],
-        autoScrolling: true,
-        scrollHorizontally: true,
-        controlArrows: false,
-        onLeave: (section, index) => {
-            if (index == 1) {
-                $('#header > div > a > h1').html('Gyuwon').css({color:'#ffffff'}).css({background:'url("../images/icon_home.png") no-repeat left center'});
-            } else if (index == 2) {
-                $('#header > div > a > h1').html('Gyuwon').css({color:'#000000'}).css({background:'url("../images/icon_home_black.png") no-repeat left center'});
-            } else if (index == 3) {
-                $('#header > div > a > h1').html('Gyuwon').css({color:'#ffffff'}).css({background:'url("../images/icon_home.png") no-repeat left center'});
+        //autoScrolling: true,
+        //scrollHorizontally: true,
+        //controlArrows: false,
+        scrollOverflow:true,
+        afterLoad:function (section, origin) {
+            if (origin.index === 0) {
+                $('#header').addClass('on1').removeClass('on2 on3');
+                $('.btnScrollTop').fadeOut();
+            } else if (origin.index === 1) {
+                $('#header').addClass('on2').removeClass('on1 on3');
+                $('.btnScrollTop').fadeIn();
+            } else if (origin.index === 2) {
+                $('#header').addClass('on3').removeClass('on1 on2');
+                $('.btnScrollTop').fadeIn();
             }
         }
     });
 
+    $('.btnScrollTop').on({
+        click: function() {
+            location.href = '#section1';
+        }
+    });
 
 });

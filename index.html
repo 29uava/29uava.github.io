@@ -5,29 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gyuwon Portfolio</title>
     <!-- css -->
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="js/jquery-ui.css">
-    <link rel="stylesheet" href="js/swiper/css/swiper.css">
-    <link rel="stylesheet" href="js/fullPage.js-2.9.7/jquery.fullpage.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../js/jquery-ui.css">
+    <link rel="stylesheet" href="../js/swiper/css/swiper.css">
+    <link rel="stylesheet" href="../js/fullPage.js-2.9.7/fullpage.css">
     <!-- Javascript -->
-    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
-    <script type="text/javascript" src="js/jquery-ui.js"></script>
-    <script type="text/javascript" src="js/ui.js"></script>
-    <script type="text/javascript" src="js/fullPage.js-2.9.7/jquery.fullpage.js"></script>
-    <script type="text/javascript" src="js/swiper/js/swiper.js"></script>
+    <script type="text/javascript" src="../js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.js"></script>
+    <script type="text/javascript" src="../js/fullPage.js-2.9.7/scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="../js/fullPage.js-2.9.7/fullpage.js"></script>
+    <script type="text/javascript" src="../js/swiper/js/swiper.js"></script>
+    <script type="text/javascript" src="../js/ui.js"></script>
 </head>
 <body>
 
 <!-- header -->
-<header id="header">
+<header id="header" class="on1">
     <div class="flex sb ac">
         <a href="index.html">
             <h1 class="logo" id="logoName">Gyuwon</h1>
         </a>
         <div class="menu">
             <ul>
-                <li><a href="#section3">ABOUT</a></li>
                 <li><a href="#section2">PORTFOLIO</a></li>
+                <li><a href="#section3">ABOUT</a></li>
                 <li><a href="#section1">CONTACT</a></li>
             </ul>
         </div>
@@ -48,15 +49,13 @@
                             <div class="textArea">
                                 <strong class="tit">LX 국토정보플랫폼</strong>
                                 <p class="desc">
-                                    국토지리정보원 공간정보 서비스 체계에서<br/>
-                                    공공과 민간의 정보 활용과 유통을 담당하는<br/>
-                                    대표 서비스 창구
+                                    국토지리정보원 공간정보 서비스 체계에서 공공과 민간의 정보 활용과 유통을 담당하는 대표 서비스 창구
                                 </p>
                             </div>
                             <!-- //textArea -->
                             <!-- imgBox -->
                             <div class="imgBox">
-                                <img src="images/portfolio/lx.png" alt="LX 국토정보플랫폼"/>
+                                <img src="../images/portfolio/lx.png" alt="LX 국토정보플랫폼"/>
                             </div>
                             <!--// imgBox -->
                         </div>
@@ -67,15 +66,13 @@
                             <div class="textArea">
                                 <strong class="tit">공간정보산업협회</strong>
                                 <p class="desc">
-                                    공간정보산업 관련 각종 자료를 수집 조사하고,<br/>
-                                    측량 법령, 기술, 측지, 도서 검색, 법률 등<br/>
-                                    정보 자료실 제공
+                                    공간정보산업 관련 각종 자료를 수집 조사하고, 측량 법령, 기술, 측지, 도서 검색, 법률 등 정보 자료실 제공
                                 </p>
                             </div>
                             <!-- //textArea -->
                             <!-- imgBox -->
                             <div class="imgBox">
-                                <img src="images/portfolio/gis_En.png" alt="공간정보산업협회"/>
+                                <img src="../images/portfolio/gis_En.png" alt="공간정보산업협회"/>
                             </div>
                             <!--// imgBox -->
                         </div>
@@ -86,15 +83,13 @@
                             <div class="textArea">
                                 <strong class="tit">KGEO 플랫폼</strong>
                                 <p class="desc">
-                                    우리나라의 모든 공간 정보를 손쉽게 통합하고,<br />
-                                    누구나 열람이 가능하여 활용할 수 있도록 한<br />
-                                    클라우드 기반의 공간정보플랫폼
+                                    우리나라의 모든 공간 정보를 손쉽게 통합하고, 누구나 열람이 가능하여 활용할 수 있도록 한 클라우드 기반의 공간정보플랫폼
                                 </p>
                             </div>
                             <!-- //textArea -->
                             <!-- imgBox -->
                             <div class="imgBox">
-                                <img src="images/portfolio/kgeop.png" alt="KGEO 플랫폼"/>
+                                <img src="../images/portfolio/kgeop.png" alt="KGEO 플랫폼"/>
                             </div>
                             <!--// imgBox -->
                         </div>
@@ -105,15 +100,13 @@
                             <div class="textArea">
                                 <strong class="tit">COSMOS</strong>
                                 <p class="desc">
-                                    국토지리정보원 공간정보 서비스 체계에서<br />
-                                    공공과 민간의 정보 활용과 유통을 담당하는<br />
-                                    대표 서비스 창구
+                                    국토지리정보원 공간정보 서비스 체계에서 공공과 민간의 정보 활용과 유통을 담당하는 대표 서비스 창구
                                 </p>
                             </div>
                             <!-- //textArea -->
                             <!-- imgBox -->
                             <div class="imgBox">
-                                <img src="images/portfolio/cosmos.png" alt="cosmos"/>
+                                <img src="../images/portfolio/cosmos.png" alt="cosmos"/>
                             </div>
                             <!--// imgBox -->
                         </div>
@@ -141,37 +134,60 @@
     <!-- Section2 -->
     <div class="section sec2" data-anchor="section2">
         <div class="inner">
+            <h1 class="titSec">UI Design</h1>
             <div class="cardList">
                 <!--card-->
                 <div class="card">
                     <div class="imgBox">
-
+                        <img src="../images/thumb/pms.png" alt="PMS" />
                     </div>
                     <div class="txtBox">
-                        <strong class="tit">제목</strong>
-                        <p class="date">내용</p>
+                        <strong class="tit">PMS</strong>
+                        <p class="date">2021.02 - 2021.05</p>
                     </div>
                 </div>
                 <!--//card-->
                 <!--card-->
                 <div class="card">
                     <div class="imgBox">
-
+                        <img src="../images/thumb/lx.png" alt="LX 국토정보플랫폼" />
                     </div>
                     <div class="txtBox">
-                        <strong class="tit">제목</strong>
-                        <p class="date">내용</p>
+                        <strong class="tit">LX 국토정보플랫폼</strong>
+                        <p class="date">2021.05 -</p>
                     </div>
                 </div>
                 <!--//card-->
                 <!--card-->
                 <div class="card">
                     <div class="imgBox">
-
+                        <img src="../images/thumb/gis.png" alt="공간정보산업협회" />
                     </div>
                     <div class="txtBox">
-                        <strong class="tit">제목</strong>
-                        <p class="date">내용</p>
+                        <strong class="tit">공간정보산업협회</strong>
+                        <p class="date">2021.07 - 2021.07</p>
+                    </div>
+                </div>
+                <!--//card-->
+                <!--card-->
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="../images/thumb/gis_en.png" alt="공간정보산업협회 영문" />
+                    </div>
+                    <div class="txtBox">
+                        <strong class="tit">공간정보산업협회 영문</strong>
+                        <p class="date">2021.08 - 2021.08</p>
+                    </div>
+                </div>
+                <!--//card-->
+                <!--card-->
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="../images/thumb/smart.png" alt="스마트국토정보" />
+                    </div>
+                    <div class="txtBox">
+                        <strong class="tit">스마트국토정보</strong>
+                        <p class="date">2021.07 -</p>
                     </div>
                 </div>
                 <!--//card-->
@@ -270,6 +286,10 @@
     </div>
     <!-- //Section3 -->
 </div>
+<button type="button" class="btnScrollTop"></button>
+<footer>
+    test
+</footer>
 
 <script type="text/javascript">
     var swiper = new Swiper(".cusSwiper", {
@@ -279,12 +299,14 @@
             clickable: true,
         },
         loop: true,
+        speed: 1000,
         effect: "fade",
         navigation: {
             nextEl: ".swiper-button-down",
             prevEl: ".swiper-button-up",
         },
     });
+
 </script>
 </body>
 </html>
