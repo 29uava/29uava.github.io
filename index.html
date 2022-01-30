@@ -43,17 +43,41 @@
     <div class="section sec1" data-anchor="section1">
         <div class="inner">
             <div class="cusSwiper">
+                <!-- textArea -->
+                <div class="textArea active">
+                    <strong class="tit">LX 국토정보플랫폼</strong>
+                    <p class="desc">
+                        국토지리정보원 공간정보 서비스 체계에서 공공과 민간의 정보 활용과 유통을 담당하는 대표 서비스 창구
+                    </p>
+                </div>
+                <!-- //textArea -->
+                <!-- textArea -->
+                <div class="textArea">
+                    <strong class="tit">공간정보산업협회</strong>
+                    <p class="desc">
+                        공간정보산업 관련 각종 자료를 수집 조사하고, 측량 법령, 기술, 측지, 도서 검색, 법률 등 정보 자료실 제공
+                    </p>
+                </div>
+                <!-- //textArea -->
+                <!-- textArea -->
+                <div class="textArea">
+                    <strong class="tit">KGEO 플랫폼</strong>
+                    <p class="desc">
+                        우리나라의 모든 공간 정보를 손쉽게 통합하고, 누구나 열람이 가능하여 활용할 수 있도록 한 클라우드 기반의 공간정보플랫폼
+                    </p>
+                </div>
+                <!-- //textArea -->
+                <!-- textArea -->
+                <div class="textArea">
+                    <strong class="tit">COSMOS</strong>
+                    <p class="desc">
+                        국토지리정보원 공간정보 서비스 체계에서 공공과 민간의 정보 활용과 유통을 담당하는 대표 서비스 창구
+                    </p>
+                </div>
+                <!-- //textArea -->
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="flex ac">
-                            <!-- textArea -->
-                            <div class="textArea">
-                                <strong class="tit">LX 국토정보플랫폼</strong>
-                                <p class="desc">
-                                    국토지리정보원 공간정보 서비스 체계에서 공공과 민간의 정보 활용과 유통을 담당하는 대표 서비스 창구
-                                </p>
-                            </div>
-                            <!-- //textArea -->
                             <!-- imgBox -->
                             <div class="imgBox">
                                 <img src="../images/portfolio/lx.png" alt="LX 국토정보플랫폼"/>
@@ -63,14 +87,6 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="flex ac">
-                            <!-- textArea -->
-                            <div class="textArea">
-                                <strong class="tit">공간정보산업협회</strong>
-                                <p class="desc">
-                                    공간정보산업 관련 각종 자료를 수집 조사하고, 측량 법령, 기술, 측지, 도서 검색, 법률 등 정보 자료실 제공
-                                </p>
-                            </div>
-                            <!-- //textArea -->
                             <!-- imgBox -->
                             <div class="imgBox">
                                 <img src="../images/portfolio/gis_En.png" alt="공간정보산업협회"/>
@@ -80,14 +96,6 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="flex ac">
-                            <!-- textArea -->
-                            <div class="textArea">
-                                <strong class="tit">KGEO 플랫폼</strong>
-                                <p class="desc">
-                                    우리나라의 모든 공간 정보를 손쉽게 통합하고, 누구나 열람이 가능하여 활용할 수 있도록 한 클라우드 기반의 공간정보플랫폼
-                                </p>
-                            </div>
-                            <!-- //textArea -->
                             <!-- imgBox -->
                             <div class="imgBox">
                                 <img src="../images/portfolio/kgeop.png" alt="KGEO 플랫폼"/>
@@ -97,14 +105,6 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="flex ac">
-                            <!-- textArea -->
-                            <div class="textArea">
-                                <strong class="tit">COSMOS</strong>
-                                <p class="desc">
-                                    국토지리정보원 공간정보 서비스 체계에서 공공과 민간의 정보 활용과 유통을 담당하는 대표 서비스 창구
-                                </p>
-                            </div>
-                            <!-- //textArea -->
                             <!-- imgBox -->
                             <div class="imgBox">
                                 <img src="../images/portfolio/cosmos.png" alt="cosmos"/>
@@ -123,10 +123,10 @@
             </div>
 
             <div class="scrollDown">
-                <div class="mouseDown">
-                </div>
-                <div class="moveTxt">
-                </div>
+                <div class="mouseDown"></div>
+                <span class="arrow"></span>
+                <span class="arrow"></span>
+                <span class="arrow"></span>
             </div>
 
         </div>
@@ -378,6 +378,21 @@
 <!--//popup-->
 
 <script type="text/javascript">
+    // var swiper = new Swiper(".cusSwiper", {
+    //     direction: "vertical",
+    //     pagination: {
+    //         el: ".swiper-pagination",
+    //         clickable: true,
+    //     },
+    //     loop: true,
+    //     speed: 1000,
+    //     effect: "fade",
+    //     navigation: {
+    //         nextEl: ".swiper-button-down",
+    //         prevEl: ".swiper-button-up",
+    //     },
+    // });
+
     var swiper = new Swiper(".cusSwiper", {
         direction: "vertical",
         pagination: {
@@ -385,14 +400,17 @@
             clickable: true,
         },
         loop: true,
-        speed: 1000,
-        effect: "fade",
+        speed: 500,
         navigation: {
             nextEl: ".swiper-button-down",
             prevEl: ".swiper-button-up",
         },
+        on:{
+            slideChange : function (index){
+                $('.cusSwiper').children('.textArea').eq(swiper.realIndex).addClass('active').siblings('.textArea').removeClass('active')
+            }
+        }
     });
-
 </script>
 </body>
 </html>
