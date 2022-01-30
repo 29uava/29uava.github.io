@@ -45,49 +45,49 @@ $(document).ready(function () {
             console.log();
             switch ($(this).parent('.card').children('.txtBox').children('.tit').text()) {
                 case 'PMS':
-                    $('.cont > img').attr('src', '../images/popup/project_pms.jpg');
+                    $('.cont > img').attr('src', '../images/popup/project_pms.png');
                     break;
                 case 'LX 국토정보플랫폼':
-                    $('.cont > img').attr('src', '../images/popup/project_lx국토정보플랫폼.jpg');
+                    $('.cont > img').attr('src', '../images/popup/project_lx국토정보플랫폼.png');
                     break;
                 case '공간정보산업협회':
-                    $('.cont > img').attr('src', '../images/popup/project_공간정보산업협회.jpg');
+                    $('.cont > img').attr('src', '../images/popup/project_공간정보산업협회.png');
                     break;
                 case '공간정보산업협회 영문':
-                    $('.cont > img').attr('src', '../images/popup/project_공간정보산업협회_영문.jpg');
+                    $('.cont > img').attr('src', '../images/popup/project_공간정보산업협회_영문.png');
                     break;
                 case '스마트국토정보':
-                    $('.cont > img').attr('src', '../images/popup/project_스마트국토정보.jpg');
+                    $('.cont > img').attr('src', '../images/popup/project_스마트국토정보.png');
                     break;
                 case 'KGEOP_측량업관리':
-                    $('.cont > img').attr('src', '../images/popup/project_kgeop_측량업관리.jpg');
+                    $('.cont > img').attr('src', '../images/popup/project_kgeop_측량업관리.png');
                     break;
                 case 'KGEOP_로컬서비스':
-                    $('.cont > img').attr('src', '../images/popup/project_kgeop_로컬서비스.jpg');
+                    $('.cont > img').attr('src', '../images/popup/project_kgeop_로컬서비스.png');
                     break;
                 case 'KGEOP_품질관리시스템':
-                    $('.cont > img').attr('src', '../images/popup/project_kgeop_품질관리시스템.jpg');
+                    $('.cont > img').attr('src', '../images/popup/project_kgeop_품질관리시스템.png');
                     break;
                 case 'KGEOP_행정업무지원':
-                    $('.cont > img').attr('src', '../images/popup/project_kgeop_행정업무지원.jpg');
+                    $('.cont > img').attr('src', '../images/popup/project_kgeop_행정업무지원.png');
                     break;
                 case 'KGEOP_북한지역서비스':
-                    $('.cont > img').attr('src', '../images/popup/project_kgeop_북한지역서비스.jpg');
+                    $('.cont > img').attr('src', '../images/popup/project_kgeop_북한지역서비스.png');
                     break;
                 case '충북공간플랫폼_아이콘':
-                    $('.cont > img').attr('src', '../images/popup/project_충북공간플랫폼.jpg');
+                    $('.cont > img').attr('src', '../images/popup/project_충북공간플랫폼.png');
                     break;
                 case 'LX 통합업무플랫폼':
-                    $('.cont > img').attr('src', '../images/popup/project_lx통합업무플랫폼.jpg');
+                    $('.cont > img').attr('src', '../images/popup/project_lx통합업무플랫폼.png');
                     break;
                 case '지적층략업무지원시스템(CosMos)':
-                    $('.cont > img').attr('src', '../images/popup/project_지적측량업무지원시스템(CosMos).jpg');
+                    $('.cont > img').attr('src', '../images/popup/project_지적측량업무지원시스템(CosMos).png');
                     break;
                 case 'LX 지적통합정보관리시스템':
-                    $('.cont > img').attr('src', '../images/popup/project_LX_지적통합정보관리시스템.jpg');
+                    $('.cont > img').attr('src', '../images/popup/project_LX_지적통합정보관리시스템.png');
                     break;
                 case 'KGEOP_저작도구':
-                    $('.cont > img').attr('src', '../images/popup/project_kgeop_저작도구.jpg');
+                    $('.cont > img').attr('src', '../images/popup/project_kgeop_저작도구.png');
                     break;
                 default:
                     break;
