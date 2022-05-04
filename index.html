@@ -333,6 +333,7 @@
                         <li><i class="ico illustrator"><span class="hidden">illustrator</span></i></li>
                         <li><i class="ico xd"><span class="hidden">Xd</span></i></li>
                         <li><i class="ico sketch"><span class="hidden">sketch</span></i></li>
+                        <li><i class="ico figma"><span class="hidden">Figma</span></i></li>
                         <li><i class="ico protopie"><span class="hidden">protopie</span></i></li>
                         <li><i class="ico zeplin"><span class="hidden">zeplin</span></i></li>
                     </ul>
@@ -347,7 +348,7 @@
             <footer>
                 <div class="inner">
                     <div class="row">
-                        <button type="button" class="btnKakao"><span class="hidden">카카오톡</span></button>
+                        <button type="button" class="btnKakao" id="kakaoLink"><span class="hidden">카카오톡</span></button>
                     </div>
                     <div class="row">
                         <div class="address">
@@ -372,7 +373,7 @@
 <div class="popup cScroll thin hide">
     <!--cont-->
     <div class="cont" id="portFolioPopUp">
-        <img src="../images/popup/project_pms.jpg"/>
+        <img src="../images/popup/project_pms.jpg" alt="PMS"/>
     </div>
 </div>
 <!--//popup-->
@@ -392,6 +393,8 @@
     //         prevEl: ".swiper-button-up",
     //     },
     // });
+
+
 
     var swiper = new Swiper(".cusSwiper", {
         direction: "vertical",

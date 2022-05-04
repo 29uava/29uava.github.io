@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+    $('#kakaoLink').on({
+        click: function () {
+            location.href = 'https://open.kakao.com/o/sQwPks9d';
+        }
+    });
+
     $('.btnMenu').on({
         click: function () {
             $(this).toggleClass('active').siblings('.menu').toggleClass('active');
