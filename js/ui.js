@@ -95,6 +95,9 @@ $(document).ready(function () {
                 case 'KGEOP_저작도구':
                     $('.cont > img').attr('src', '../images/popup/project_kgeop_저작도구.png');
                     break;
+                case '데일리샷 모바일 리디자인':
+                    $('.cont > img').attr('src', '../images/popup/project_dailyshot.png');
+                    break;
                 default:
                     break;
             }
